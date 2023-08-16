@@ -12,7 +12,7 @@ creds = flow.run_local_server(port=0)
 service = build('calendar', 'v3', credentials=creds)
 
 # Application you want to track
-target_app_name = "GitHubDesktop.exe"  # Replace with the app name
+target_app_name = "GitHubDesktop.exe"
 
 def get_active_window_title():
     active_window = psutil.win32.get_active_window()
